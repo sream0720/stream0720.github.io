@@ -7,52 +7,51 @@ The text-to-Audio (TTA) generation task has attracted gradually attention thanks
 
 ## Audio Samples
 
- <table style="width: 100%;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed;"> <!-- 新增table-layout确保宽度生效，避免内容撑开列 -->
   <thead>
     <tr>
-      <th style="width: 10%; border: 1px solid #ddd;"> </th> <!-- 第1列：10%宽度 -->
-      <th style="width: 20%; border: 1px solid #ddd;">Prompt</th> <!-- 第2列：30%宽度 -->
-      <th style="width: 35%; border: 1px solid #ddd;">Original Music</th> <!-- 第3列：30%宽度 -->
-      <th style="width: 35%; border: 1px solid #ddd;">Fine-tuned Music</th> <!-- 第4列：30%宽度 -->
+      <th style="width: 10%; border: 1px solid #ddd; padding: 8px; text-align: center;"> </th> <!-- 第一列保持10%，居中对齐序号更美观 -->
+      <th style="width: 30%; border: 1px solid #ddd; padding: 8px;">Prompt</th> <!-- 第二列宽度调整为30%，适配较长文本 -->
+      <th style="width: 30%; border: 1px solid #ddd; padding: 8px;">Original Music</th> <!-- 保持30%，确保音频控件显示完整 -->
+      <th style="width: 30%; border: 1px solid #ddd; padding: 8px;">Fine-tuned Music</th> <!-- 保持30%，与Original列对称 -->
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Audio1</th>
-      <td>Water flowing, wind blowing, a dog whimpers.</td>
-      <td><audio controls><source src="audios/audio_base_9.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audios/audio_tune_9.wav" type="audio/wav"></audio></td>
+      <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Audio1</th>
+      <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word;">Water flowing, wind blowing, a dog whimpers.</td> <!-- 新增word-wrap避免长文本溢出 -->
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_base_9.wav" type="audio/wav"></audio></td> <!-- 音频控件设宽，适配列宽 -->
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_tune_9.wav" type="audio/wav"> ></audio></td>
     </tr>
     <tr>
-      <th scope="row">Audio2</th>
-      <td>A man snoring.</td>
-      <td><audio controls><source src="audios/audio_base_15.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audios/audio_tune_15.wav" type="audio/wav"></audio></td>
+      <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Audio2</th>
+      <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word;">A man snoring.</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_base_15.wav" type="audio/wav"> ></audio></td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_tune_15.wav" type="audio/wav"> ></audio></td>
     </tr>
     <tr>
-      <th scope="row">Audio3</th>
-      <td>Boys are talking and a dog is barking.</td>
-      <td><audio controls><source src="audios/audio_base_20.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audios/audio_tune_20.wav" type="audio/wav"></audio></td>
+      <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Audio3</th>
+      <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word;">Boys are talking and a dog is barking.</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_base_20.wav" type="audio/wav"> ></audio></td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_tune_20.wav" type="audio/wav"> ></audio></td>
     </tr>
     <tr>
-      <th scope="row">Audio4</th>
-      <td>Water running followed by wind.</td>
-      <td><audio controls><source src="audios/audio_base_34.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audios/audio_tune_34.wav" type="audio/wav"></audio></td>
+      <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Audio4</th>
+      <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word;">Water running followed by wind.</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_base_34.wav" type="audio/wav"> ></audio></td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_tune_34.wav" type="audio/wav"> ></audio></td>
     </tr>
     <tr>
-      <th scope="row">Audio5</th>
-      <td>A lion roaring followed by a synthesized whoosh then birds chirpings.</td>
-      <td><audio controls><source src="audios/audio_base_46.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audios/audio_tune_46.wav" type="audio/wav"></audio></td>
+      <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Audio5</th>
+      <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word;">A lion roaring followed by a synthesized whoosh then birds chirpings.</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_base_46.wav" type="audio/wav"> ></audio></td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_tune_46.wav" type="audio/wav"> ></audio></td>
     </tr>
     <tr>
-      <th scope="row">Audio6</th>
-      <td>A man talking before shouting then whistling followed by rustling</td>
-      <td><audio controls><source src="audios/audio_base_44.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audios/audio_tune_44.wav" type="audio/wav"></audio></td>
+      <th scope="row" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Audio6</th>
+      <td style="border: 1px solid #ddd; padding: 8px; word-wrap: break-word;">A man talking before shouting then whistling followed by rustling</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_base_44.wav" type="audio/wav"> ></audio></td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;"><audio controls style="width: 90%;"><source src="audios/audio_tune_44.wav" type="audio/wav"> ></audio></td>
     </tr>
   </tbody>
 </table>
-
