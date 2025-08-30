@@ -1,4 +1,4 @@
-# CLAP-Reward Guided Diffusion Fine-Tuning for  Audio Generation Models
+# CLAP-Reward Guided Diffusion Fine-Tuning for an Audio Generation Model
 ## Abstract
 
 <p style="text-align: justify; text-justify: inter-word;">
